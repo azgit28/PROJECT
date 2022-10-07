@@ -11,13 +11,25 @@
     /* gap: 10px; */
     justify-content: space-between;
     background-color: white;
+    width: 100%;
     padding: 20px 10px;
-    border: 1px solid black;
+    box-sizing: border-box;
+    border: 1px solid white;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: sticky;
+    top: 0;
+    z-index: 9;
 }
 .one {
     display: flex;
     gap: 20px;
+    /* background-image: url(images/newBambuHero.png); */
+}
+.oneh:hover{
+    text-decoration: none;
+    color: white;
+    background-color: blue;
+    border-bottom: 5px green solid;
 }
 .two {
     display: flex;
@@ -42,56 +54,813 @@
 
 .aq:hover {
     background-color: blue;
-    
+}
+
+.bgimg {
+    width: 50%;
+}
+.bgimg img{
+    width: 400px;
+}
+
+.hero {
+    /* background-color: rgba(72, 19, 122, 0.74); */
+    background: linear-gradient(to top, rgba(0,0,0,0.8)50%, rgba(0,0,0,0.8)50%), url(images/newBambuHero.png);
+    position: relative;
+    height: 110vh;
+    background-size: cover;
+    background-position: center;
 
 }
-section {
-    background-color: rgba(72, 19, 122, 0.74)
-    
+
+.container {
+    background-color: rgba(0, 0, 0, 0.4);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+    z-index: 2;
+    padding: 50px 0;
 }
-.bgimg img {
-    width: 400px;
+
+.row {
+    display: flex;
+    padding: 0 8%;
+}
+
+.col-6 {
+    width: 50%;
 }
 
 .landing {
     display: flex;
-    justify-content: space-between;
-    padding: 50px 100px;
+    /* justify-content: space-between; */
+    /* padding: 50px 100px; */
+    width: 100%;
 }
+
 .landtext {
     display: flex;
     flex-direction: column;
     justify-content: right;
     gap: 20px;
-    transform: translateX(10%);
 }
-
 .landtext h1 {
-    font-size: 50px;
+    font-family: "Silka", Sans-serif;
+    font-weight: 900;
+    font-size: 4vw;
     color: white;
 }
 .landtext p {
     font-size: 20px;
     color: white;
 }
-.sd2 {
+.ityped {
+    text-decoration: underline;
+}
+
+
+/* /* .sd2 {
     background-color:white;
     color: blueviolet;
     padding: 10px;
     border: 1px solid white;
     border-radius: 20px;
     width:150px;
-}
+/* }
 .sd2:hover {
     background-color: blueviolet;
     color: white;
+} */  
+
+.sd2send {
+    background-color: white;
+    color: blueviolet;
+    padding: 10px;
+    width: 150px;
+    border-radius: 20px;
+}
+.sd2send:hover {
+    background-color: blueviolet;
+    color: white;
+    cursor: pointer;
+}
+
+.tcards {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px 0;
+    /* align-items: center; 
+    font-family: "Silika", "Sans-serif";
+    color: #7453cf;
+    font-size: 400;
+    font-weight: 18px; */
+}
+.tcards img  {
+    display: flex;
+    justify-content: center;
+    /* flex-direction: column; */
+    align-items: center;
+} 
+
+.tcards1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Silka", Sans-serif;
+    color: #7453cf;
+    font-size: 600;
+    font-weight: 18px;
+}
+.tcards1>h1 {
+    font-family: "Silka", Sans-serif;
+    color: #7453cf;
+    font-size: 600;
+    font-weight: 24px;
+}
+.tcards1>p {
+    font-family: "Silka", Sans-serif;
+    color: #7453cf;
+    font-size: 600;
+    font-weight: 24px;
+}
+
+.four {
+    background-color: blueviolet;
+    min-height: 100%;
+    padding-bottom: 40px;
+}
+.four header {
+    display: flex;
+    justify-content: center;
+    flex-direction:column ;
+    align-items: center;
+    font-family:"Silka", Sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    /* margin: 100px; */
+    padding: 50px 0;
+    color: white;
 
 }
-.fa-send {
-    color: blueviolet;
-    background-color: transparent;
+
+.four .widget {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
 }
-.fa-send:hover {
+.vp {
     color: white;
-    background-color: blueviolet;
+    background-color: blue;
+    width: 71%;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 605px;
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+    /* align-items: baseline; */
+}
+
+
+.box {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 70%;
+    height: 100vh;
+    border-radius: 10px;
+    padding: 100px 20px;
+    gap: 50px;
+    background-image: url(images/heroBuildTemp.webp);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: right;
+
+}
+.bapi {
+    display: flex;
+    gap: 20px;
+    background-color: grey;
+    font-family: "Silka", Sans-serif;
+    width: 150px;
+    border-radius: 20px;
+    padding: 10px;
+    /* margin: 10px; */
+    
+}
+.box>img {
+    width: 50px;
+}
+.ficons {
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    gap: 10px;
+    font-family: "Silka", Sans-serif;
+    width: 100%;
+    padding: 0 10px;
+
+}
+.ficons1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(147, 147, 224);
+    border-radius: 20px;
+    color: white;
+    padding: 20px;
+    font-size: 10px;
+    font-weight: 4rem; 
+    width: 28%;
+
+}
+.four .fa {
+    margin-right: 10px;
+}
+.ficons1>h1 {
+    display: flex; 
+}
+/* .ficonsb  {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgb(147, 147, 224);
+    color: white;
+    border: none;
+    outline: none;
+    font-family: "Silka", Sans-serif;
+    font-size: 18;
+    font-weight: 400;
+}
+     */
+.five {
+    /* background-color: blue; */
+    background-image: url(images/Slice-1.png);
+    padding: 20px;
+}
+.five>h1 {
+    display: flex;
+    justify-content: left;
+    font-family: "Silka", Sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    color: white;
+    padding: 70px 0;
+}
+.fcards {
+    display: flex;
+    justify-content: center;
+    color: white;
+    /* border: 1px solid white;
+    border: 1px solid white; */
+}
+
+/* .fcards:hover {
+
+    background-color: rgb(rgb(131, 14, 102), rgb(0, 236, 0), rgb(68, 24, 226));
+    cursor: pointer;
+} */
+
+.fcards>div {
+    border: 1px solid white;
+    border-bottom: 5px solid green;
+    width: 100%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 30px;
+    gap: 70px;
+}
+ 
+
+.fcards .fa {
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+}
+.fcards h1 {
+    display: flex;
+    justify-content: center;
+}
+.six {
+background-image: linear-gradient(180deg, #2D2258 0%, #2D2258 100%);
+padding: 10px;
+width: 100%;
+height: 100vh;
+/* margin: 20px 0 20px 0; */
+}
+.sauom {
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 7px;
+    font-family: "Silka", Sans-serif;
+    padding: 20px 0;
+}  
+.soa {
+   color: white;
+   font-size: 34px; 
+   font-family: "Silka", Sans-serif;
+   padding: 20px 0;
+}
+.scards {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    min-height:100%;
+    gap: 10px;   
+}
+
+.scards h3 {
+    display: flex;
+    justify-content: center;
+    font-family: "Silka", Sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 40px; 
+    background:#3e2d81;
+    padding: 20px;
+}
+
+.scards h1 {
+    display: flex;
+    justify-content: center;
+    font-family: "Silka", Sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 20px; 
+    background:#3e2d81;
+    padding: 20px;
+}
+.scards .h2 {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    font-family: "Silka", Sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 100px;
+}
+.scards h4 {
+    font-family: "Silka", Sans-serif;
+    font-size: 14px;
+    font-weight: 400;  
+    margin-top: 50px;
+    padding: 0 20px;
+}
+.scards1 {
+    background: linear-gradient(to top, rgba(0,0,0,0.8)50%, rgba(0,0,0,0.8)50%), url(images/scards2.webp);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    color: white;   
+    /* min-height: 100%; */
+}
+.scards1:hover {
+    border: green solid 2px;
+    min-height: 100%;
+}
+.ladate {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-top: 50px;
+    padding:0 20px;   
+}
+
+.ladate>h2 {
+    font-family: "Silka", Sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    background-color: aqua;
+    color: black;
+    padding: 10px;
+}
+.ladate>p {
+    font-family: "Silka", Sans-serif;
+    font-size: 14px;
+    font-weight: 400; 
+}
+
+.ladate2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-top: 50px;
+    padding:0 20px;
+} 
+.ladate2>h2 {
+    font-family: "Silka", Sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    background-color: aqua;
+    color: black;
+    padding: 10px;
+}
+.ladate2>p {
+    font-family: "Silka", Sans-serif;
+    font-size: 14px;
+    font-weight: 400; 
+}
+.scards2 {
+    background: linear-gradient(to top, rgba(0,0,0,0.8)50%, rgba(0,0,0,0.8)50%), url(images/scards1.webp);
+    background-size: cover;
+    background-position:top center;
+    background-repeat: no-repeat;
+    color: white;   
+}
+.scards2:hover {
+    border: green solid 2px;
+}
+.scards3 {
+    background: linear-gradient(to top, rgba(0,0,0,0.8)50%, rgba(0,0,0,0.8)50%), url(images/scards4.webp);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    color: white;    
+}
+.scards3:hover {
+    border: green solid 2px;
+}
+.scards4 {
+    background: linear-gradient(to top, rgba(0,0,0,0.8)50%, rgba(0,0,0,0.8)50%), url(images/scards3.png);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    color: white;   
+}
+.scards4:hover {
+    border: green solid 2px;
+}
+.seven {
+    min-width: 100%; 
+    display: flex;
+}
+.sitext {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 20px 10px 20px;
+    gap: 20px;
+    margin: 100px 0;
+    
+}
+.sitext>h1 {
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-family: "Silika", "Sans-serif";
+    font-weight: 400;
+    box-sizing: border-box;
+    margin: 20px 0;
+    line-height: 20px;
+    text-align: center;
+    color: #573B84;
+}
+.ssd {
+    display: flex;
+    justify-content: center;
+    background-color: #2D2258;
+    color: white;
+    padding: 10px;
+    border-radius: 30px;
+    width: 150px;
+}
+.sform {
+    padding: 20px;
+    background-color: rgb(227, 227, 235);
+    width: 50%;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: space-between;
+    width: 50%;
+    
+}
+.sform>h1 {
+    color: #5130AA;
+    font-family: "Silka", Sans-serif;
+    font-size: 50px;
+    font-weight: 600;
+}
+.sform>p {
+    color: #5130AA;
+    font-family: "Silka", Sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.sforms {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: purple;
+    color: white;
+    width: 60px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.ffill {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+    /* gap: 20px; */
+}
+.ffill input {
+    outline: none;
+    border: none;
+    padding: 10px;
+    gap: 10px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    
+}
+.ffill textarea {
+    outline: none;
+    border: none;
+    padding: 20px;
+    gap: 10px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+
+}
+.ffill1 {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    border-radius: 10px;
+    width: 100%;
+
+}
+.ffill1a {
+    width: 100%;
+}
+.ffill1b {
+    display: flex;
+    flex-direction: column;
+
+} 
+.ffill2 {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    border-radius: 10px;
+}
+.ffill3 {
+    /* display: flex;
+    justify-content: center;
+    gap: 20px; */
+    width: 100%;
+}
+.ffill4 {
+    /* display: flex;
+    justify-content: center;
+    gap: 20px; */
+    width: 100%;
+}
+.ffill5 {
+    /* display: flex;
+    justify-content: center;
+    gap: 20px; */
+    width: 100%;
+}
+textarea {
+    width: 80%;
+    height: 70px;
+    padding: 10px;
+}
+.eight {
+    width: 100%;
+    display: flex; 
+    min-height: 100vh; 
+}
+.eimga {
+    color: white;
+    padding: 20px 0;
+}
+.eimgb {
+    width: 150px;
+    padding: 20px;
+}
+.eimgc {
+    width: 150px;
+    padding: 20px;
+}
+.eone {
+    width: 36%;
+    background-color: blue;
+    color: white;
+    padding: 100px 20px;
+}
+.eone h1 {
+    font-family: "Silka", Sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    box-sizing: border-box;
+    line-height: 20p;
+    word-spacing: 2px;
+    padding: 20px 0;
+    
+}
+.eone h2 {
+    font-family: "Silka", Sans-serif;
+    font-size: 18px;
+    padding: 20px 0;
+    text-decoration: underline;
+}
+.pp {
+    font-family: "Silka", Sans-serif; 
+    font-size: 18px;
+    padding: 20px;
+}
+.ptxt {
+    font-family: "Silka", Sans-serif; 
+    font-size: 14px;
+}
+
+.etwo {
+    width: 28%;
+    background-color: rgb(17, 17, 100);
+    color: white;
+    padding: 100px 20px;
+}
+.etwo h1 {
+    font-family: "Silka", Sans-serif;
+    font-weight: 400;
+    font-size: 18px;  
+    padding: 20px 0; 
+}
+.etwo h2 {
+    font-family: "Silka", Sans-serif;
+    font-weight: 400;
+    font-size: 18px; 
+    padding: 20px 0;
+    word-spacing: 2px;
+}
+.etwo .fa {
+    color: #7453cf;
+}
+
+.lkdtext {
+    display: flex;
+    justify-content: left;
+    gap: 10px;
+    margin: 15px 0;
+    font-family: "Silka", Sans-serif;
+    font-weight: 600;
+    font-size: 18px; 
+    color: #c1b4e7;
+}
+.lkdtext>p:hover {
+    text-decoration: underline;
+}
+.instext {
+    display: flex;
+    justify-content: left;
+    gap: 10px;
+    margin: 15px 0;
+    font-family: "Silka", Sans-serif;
+    font-weight: 600;
+    font-size: 18px; 
+    color:#c1b4e7 ;
+}
+.instext>p:hover {
+    text-decoration: underline;
+    
+}
+
+.esub {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-family: "Silka", Sans-serif;
+    font-weight: 600;
+    font-size: 18px; 
+    background-color: white;
+    color: #5535A5;
+    border-radius: 10px;
+    padding: 10px;
+    width: 120px;
+}
+.eemail {
+    display: flex;
+    padding: 10px 0;
+    width: 100%;
+    position: relative;
+    background-color: white;
+    border-radius: 15px;
+    margin: 10px 0 10px 0;
+}
+
+.eemail input {
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+.ethree {
+    width: 36%;
+    background-color: rgb(2, 2, 53);
+    color: white;
+    padding: 100px 20px;
+    display: flex;
+    flex-direction: column;
+}
+.ethree h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.e3h {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    color: #908BD8;
+    font-family: "Silka", Sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.e3l {
+    display: flex;
+    justify-content: center;
+    gap: 120px; 
+    font-family: "Silka", Sans-serif;
+    font-size: 12px;
+    font-weight: 100;
+}
+.e3l2 {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    font-family: "Silka", Sans-serif;
+    font-size: 12px;
+    font-weight: 100;
+    
+}
+.e3h2 {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    color: #908BD8;
+    font-family: "Silka", Sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.e3l3 {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; 
+    font-family:"Silka", Sans-serif;
+    font-size: 12px;
+    font-weight: 100;
+}
+
+.e3l4 {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; 
+    font-family: "Silka", Sans-serif;
+    font-size: 12px;
+    font-weight: 100;
+}
+.e3l5 {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; 
+    font-family: "Silka", Sans-serif;
+    font-size: 12px;
+    font-weight: 100;
+}
+.e3l6 {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; 
+    font-family: "Silka", Sans-serif;
+    font-size: 12px;
+    font-weight: 100;
+}
+
+.tethreeo {
+    border: 1px solid white;
 }
